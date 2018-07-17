@@ -1,0 +1,32 @@
+{
+  "name": "cocytus",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jikkai/cocytus.git"
+  },
+  "keywords": [
+    "CLI"
+  ],
+  "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jikkai/cocytus/issues"
+  },
+  "homepage": "https://github.com/jikkai/cocytus#readme",
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "lerna": "^2.11.0"
+  }
+}

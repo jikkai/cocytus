@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const commander = require('commander')
+const pkg = require('../package.json')
+const run = require('../lib')
+
+commander.version(pkg.version)
+
+commander
+  .command('init <path>')
+  .alias('i')
+  .description('Create new resume.')
+  .action(path => run.init(path))
+
+commander
+  .command('generate <path>')
+  .alias('g')
+  .description('Converting the resume to html.')
+  .action(path => run.generate(path))
+
+commander.parse(process.argv)

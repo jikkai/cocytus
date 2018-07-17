@@ -1,0 +1,27 @@
+{
+  "name": "cocytus-cli",
+  "version": "0.0.0",
+  "description": "",
+  "main": "bin/cocytus",
+  "bin": {
+    "elphame": "bin/cocytus"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jikkai/cocytus.git"
+  },
+  "keywords": [
+    "CLI"
+  ],
+  "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jikkai/cocytus/issues"
+  },
+  "homepage": "https://github.com/jikkai/cocytus#readme",
+  "dependencies": {
+    "commander": "^2.16.0",
+    "consola": "^1.4.1"
+  }
+}
