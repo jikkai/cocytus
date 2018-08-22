@@ -1,10 +1,11 @@
 {
-  "name": "cocytus",
+  "name": "cocytus-core",
   "version": "0.0.0",
   "description": "",
+  "main": "dist/cotyus.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "lint": "eslint ."
+    "dev": "parcel ./example/index.html",
+    "build": "rimraf dist && parcel build ./src/index.js -o cotyus.js"
   },
   "repository": {
     "type": "git",
@@ -19,14 +20,13 @@
     "url": "https://github.com/jikkai/cocytus/issues"
   },
   "homepage": "https://github.com/jikkai/cocytus#readme",
+  "dependencies": {
+    "alius": "0.0.1"
+  },
   "devDependencies": {
-    "eslint": "^5.4.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "lerna": "^3.1.4"
+    "parcel-bundler": "^1.9.7",
+    "parcel-plugin-svelte": "^1.2.2",
+    "rimraf": "^2.6.2",
+    "svelte": "^2.11.0"
   }
 }

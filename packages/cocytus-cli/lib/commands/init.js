@@ -1,16 +1,18 @@
-const fs = require('fs')
+const fs = require('fs-extra')
 const consola = require('consola')
 const utils = require('../../utils')
 
 module.exports = target => {
-  const path = utils.path.cwd(target)
+  const dest = utils.path.cwd(target)
 
   consola.start('Creating...')
-  if (!fs.existsSync(path)) {
-    fs.mkdirSync(path)
+  if (!fs.existsSync(dest)) {
+    fs.mkdirSync(dest)
   }
-  fs.writeFile(path + '/README.md', '# Hello\n', err => {
-    if (err) return
-    consola.success('Done!')
-  })
+
+  const src = utils.path.resolve(__dirname, '../../themes/default')
+  fs.copy(src, dest)
+    .then(() => {
+      consola.success('Done!')
+    })
 }
