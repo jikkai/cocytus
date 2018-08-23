@@ -1,5 +1,6 @@
 <section class="c-skill">
   <Title icon="package">{skill.title}</Title>
+  {@html $marked(skill.content)}
 </section>
 
 <script>

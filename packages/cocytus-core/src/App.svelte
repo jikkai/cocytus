@@ -46,7 +46,7 @@
 
 <style>
   :global(#app) {
-    max-width: 720px;
+    max-width: 860px;
     margin: auto;
   }
 </style>

@@ -43,7 +43,7 @@
   .c-timeline::before {
     position: absolute;
     top: 0;
-    left: 13px;
+    left: 9px;
     content: "";
     width: 3px;
     height: 100%;
@@ -58,19 +58,22 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     background: var(--primary);
     border-radius: 50%;
     overflow: hidden;
   }
 
   .c-timeline__block {
-    margin-left: 36px;
+    margin-left: 32px;
   }
   .c-timeline__block time {
+    margin-bottom: 6px;
+    padding-top: 2px;
     color: var(--default);
     font-size: 14px;
+    line-height: 1;
     display: block;
   }
 </style>
