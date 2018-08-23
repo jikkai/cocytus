@@ -21,9 +21,6 @@
   import Title from './title'
 
   export default {
-    oncreate () {
-      console.log(this.get().exp)
-    },
     components: {
       Title
     }
@@ -32,7 +29,7 @@
 
 <style>
   .c-exp {
-    padding-right: 10px;
+    padding-right: 18px;
     flex: 1;
   }
 
@@ -70,12 +67,20 @@
 
   .c-timeline__block {
     margin-left: 32px;
+    padding-bottom: 10px;
+    font-size: 14px;
   }
   .c-timeline__block time {
     margin-bottom: 6px;
     color: var(--default);
-    font-size: 14px;
     line-height: 1;
     display: block;
+  }
+  .c-timeline__block strong {
+    font-size: 16px;
+  }
+  .c-timeline__block :global(p) {
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 </style>

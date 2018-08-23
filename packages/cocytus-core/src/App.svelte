@@ -3,8 +3,9 @@
   <Intro intro={data.intro} />
   <Content>
     <Exp exp={data.exp} />
-    <Skill skill={data.skill} />
+    <Project project={data.project} />
   </Content>
+  <Footer />
 {:else}
   Loading...
 {/if}
@@ -16,7 +17,8 @@
   import Intro from './components/intro'
   import Content from './components/content'
   import Exp from './components/exp'
-  import Skill from './components/skill'
+  import Project from './components/project'
+  import Footer from './components/footer'
 
   export default {
     data () {
@@ -39,7 +41,8 @@
       Intro,
       Content,
       Exp,
-      Skill
+      Project,
+      Footer
     }
   }
 </script>

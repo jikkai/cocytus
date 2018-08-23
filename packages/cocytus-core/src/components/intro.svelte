@@ -1,6 +1,6 @@
 <section class="c-intro">
   <Title icon="crosshair">{intro.title}</Title>
-  <blockquote>{@html intro.content}</blockquote>
+  <blockquote>{@html $marked(intro.content)}</blockquote>
 </section>
 
 <script>

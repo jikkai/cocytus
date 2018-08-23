@@ -4,6 +4,7 @@
 
 <style>
   .c-content {
+    margin-bottom: 24px;
     display: flex;
   }
 </style>
