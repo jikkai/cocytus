@@ -1,0 +1,17 @@
+meta:
+  name: Name
+  nickname: John Cena
+  location: Global
+  mobile: 13333333333
+  email: abc@def.ghi
+  link: https://def.ghi
+
+intro:
+  title: Intro
+  content: Hi
+
+exp:
+  title: Exp
+
+skill:
+  title: Skill

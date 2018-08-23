@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/cotyus.js",
   "scripts": {
-    "dev": "parcel ./example/index.html",
+    "dev": "cpx ./example/**/*.yaml ./dist && parcel ./example/index.html",
     "build": "rimraf dist && parcel build ./src/index.js -o cotyus.js"
   },
   "repository": {
@@ -21,9 +21,13 @@
   },
   "homepage": "https://github.com/jikkai/cocytus#readme",
   "dependencies": {
-    "alius": "0.0.1"
+    "alius": "0.0.1",
+    "feather-icons": "^4.7.3",
+    "js-yaml": "^3.12.0",
+    "marked": "^0.5.0"
   },
   "devDependencies": {
+    "cpx": "^1.5.0",
     "parcel-bundler": "^1.9.7",
     "parcel-plugin-svelte": "^1.2.2",
     "rimraf": "^2.6.2",
