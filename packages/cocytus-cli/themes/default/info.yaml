@@ -21,6 +21,13 @@ exp:
       company: Abcde
       desc: "**xxx**xX*X*XXXdd~dds~saaaddd"
 
-skill:
-  title: Skill
-  content: adsfasdfxzcvafewruwioerasfdh
+project:
+  title: Projects
+  notice: hi
+  list:
+    - name: xxxxxxx
+      link: https://a.b.c
+      desc: Lorem ipsum dolor sit amet.
+    - name: yyyyyyyy
+      link: https://a.b.c
+      desc: Lorem ipsum dolor sit amet.
