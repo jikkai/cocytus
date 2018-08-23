@@ -3,7 +3,7 @@
 </section>
 
 <script>
-  import Title from './title.svelte'
+  import Title from './title'
 
   export default {
     components: {

@@ -4,8 +4,9 @@
   "description": "",
   "main": "dist/cotyus.js",
   "scripts": {
-    "dev": "cpx ./example/**/*.yaml ./dist && parcel ./example/index.html",
-    "build": "rimraf dist && parcel build ./src/index.js -o cotyus.js"
+    "predev": "cpx ../cocytus-cli/themes/default/**/*.yaml ./dist",
+    "dev": "parcel ./example/index.html",
+    "build": "rimraf dist && parcel build ./src/index.js -o cocytus.js --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,6 @@
     "parcel-bundler": "^1.9.7",
     "parcel-plugin-svelte": "^1.2.2",
     "rimraf": "^2.6.2",
-    "svelte": "^2.11.0"
+    "svelte": "^2.12.0"
   }
 }

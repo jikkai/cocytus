@@ -11,13 +11,12 @@
 
 <script>
   import yaml from 'js-yaml'
-  import marked from 'marked'
   import { fetchFile } from './utils'
-  import Header from './components/header.svelte'
-  import Intro from './components/intro.svelte'
-  import Content from './components/content.svelte'
-  import Exp from './components/exp.svelte'
-  import Skill from './components/skill.svelte'
+  import Header from './components/header'
+  import Intro from './components/intro'
+  import Content from './components/content'
+  import Exp from './components/exp'
+  import Skill from './components/skill'
 
   export default {
     data () {

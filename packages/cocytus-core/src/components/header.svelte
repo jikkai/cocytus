@@ -70,8 +70,8 @@
     color: var(--sliver);
   }
   .c-header__right :global(svg) {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     margin-right: 8px;
   }
 </style>

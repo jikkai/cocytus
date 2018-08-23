@@ -12,6 +12,16 @@ intro:
 
 exp:
   title: Exp
+  timeline:
+    - period: 2010.11 ~ 2018.08
+      company: Abcde
+      desc: "xxxxXXXXXddddssaaaddd"
+    - period: 2000.10 ~ 2010.11
+      company: Abcde
+      desc: "**xxx**xX*X*XXXdd~dds~saaaddd"
 
 skill:
   title: Skill
+  content: adsfasdfxzcvafewruwioerasfdh
+  list:
+    - a: xxx
