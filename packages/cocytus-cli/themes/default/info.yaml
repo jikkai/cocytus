@@ -1,0 +1,26 @@
+meta:
+  name: Name
+  nickname: John Cena
+  position: aaaaaa
+  location: Global
+  mobile: 13333333333
+  email: abc@def.ghi
+  link: https://def.ghi
+
+intro:
+  title: Intro
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+exp:
+  title: Exp
+  timeline:
+    - period: 2010.11 ~ 2018.08
+      company: Abcde
+      desc: "xxxxXXXXXddddssaaaddd"
+    - period: 2000.10 ~ 2010.11
+      company: Abcde
+      desc: "**xxx**xX*X*XXXdd~dds~saaaddd"
+
+skill:
+  title: Skill
+  content: adsfasdfxzcvafewruwioerasfdh

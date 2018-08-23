@@ -4,7 +4,7 @@
   "description": "",
   "main": "bin/cocytus",
   "bin": {
-    "elphame": "bin/cocytus"
+    "cocytus": "bin/cocytus"
   },
   "scripts": {},
   "repository": {
@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/jikkai/cocytus#readme",
   "dependencies": {
-    "commander": "^2.16.0",
-    "consola": "^1.4.1",
-    "fs-extra": "^7.0.0"
+    "chrome-headless-render-pdf": "^1.7.2",
+    "commander": "^2.17.1",
+    "consola": "^1.4.3",
+    "fs-extra": "^7.0.0",
+    "serve-static": "^1.13.2"
   }
 }
