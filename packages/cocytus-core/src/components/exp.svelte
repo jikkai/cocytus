@@ -4,7 +4,9 @@
   <ul class="c-timeline">
     {#each exp.timeline as item}
       <li class="c-timeline__item">
-        <div class="c-timeline__node"></div>
+        <div class="c-timeline__node">
+          {@html $feather.icons['disc'].toSvg()}
+        </div>
         <div class="c-timeline__block">
           <time>{item.period}</time>
           <strong>{item.company}</strong>
@@ -42,12 +44,11 @@
   }
   .c-timeline::before {
     position: absolute;
-    top: 0;
-    left: 9px;
+    top: 1px;
+    left: 7px;
     content: "";
-    width: 3px;
     height: 100%;
-    background: var(--primary);
+    border-left: 1px dashed var(--default);
   }
 
   .c-timeline__item {
@@ -56,13 +57,15 @@
 
   .c-timeline__node {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
-    width: 20px;
-    height: 20px;
-    background: var(--primary);
-    border-radius: 50%;
-    overflow: hidden;
+    width: 16px;
+    height: 16px;
+  }
+  .c-timeline__node :global(svg) {
+    width: 16px;
+    height: 16px;
+    fill: var(--white);
   }
 
   .c-timeline__block {
@@ -70,7 +73,6 @@
   }
   .c-timeline__block time {
     margin-bottom: 6px;
-    padding-top: 2px;
     color: var(--default);
     font-size: 14px;
     line-height: 1;

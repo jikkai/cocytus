@@ -1,7 +1,7 @@
 import { Store } from 'svelte/store.js'
 import feather from 'feather-icons'
 import marked from 'marked'
-import App from './App.svelte'
+import App from './App'
 import 'alius'
 
 if (module.hot) {
