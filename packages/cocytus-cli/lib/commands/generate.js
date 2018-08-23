@@ -13,7 +13,9 @@ module.exports = target => {
     const server = http.createServer((req, resp) => {
       serveStatic(path)(req, resp)
     }).listen(3000, () => {
-      renderPDF.generateSinglePdf('http://localhost:3000', 'resume.pdf')
+      renderPDF.generateSinglePdf('http://localhost:3000', 'resume.pdf', {
+        includeBackground: true
+      })
         .then(() => {
           server.close(() => {
             consola.success('Done!')
