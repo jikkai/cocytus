@@ -30,8 +30,8 @@
   "devDependencies": {
     "cpx": "^1.5.0",
     "parcel-bundler": "^1.9.7",
-    "parcel-plugin-svelte": "^1.2.2",
+    "parcel-plugin-svelte": "^1.2.3",
     "rimraf": "^2.6.2",
-    "svelte": "^2.12.0"
+    "svelte": "^2.13.2"
   }
 }

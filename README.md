@@ -1,5 +1,7 @@
 # Cocytus
 
+> In the midst of winter, I finally learned that there was in me an invincible summer.
+
 ## Packages
 
 | Package | Version |

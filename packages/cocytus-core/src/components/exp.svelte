@@ -9,7 +9,10 @@
         </div>
         <div class="c-timeline__block">
           <time>{item.period}</time>
-          <strong>{item.company}</strong>
+          <div>
+            <strong>{item.company}</strong>
+            <span>{item.title}</span>
+          </div>
           {@html $marked(item.desc)}
         </div>
       </li>
@@ -76,8 +79,13 @@
     line-height: 1;
     display: block;
   }
-  .c-timeline__block strong {
+  .c-timeline__block > div strong {
     font-size: 16px;
+  }
+  .c-timeline__block > div span {
+    margin-left: 12px;
+    color: var(--default);
+    font-size: 14px;
   }
   .c-timeline__block :global(p) {
     margin-top: 4px;
