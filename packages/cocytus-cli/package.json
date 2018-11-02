@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/jikkai/cocytus#readme",
   "dependencies": {
-    "chrome-headless-render-pdf": "^1.7.2",
-    "commander": "^2.17.1",
-    "consola": "^1.4.3",
+    "chrome-headless-render-pdf": "^1.8.0",
+    "commander": "^2.19.0",
+    "consola": "^1.4.4",
     "fs-extra": "^7.0.0",
     "serve-static": "^1.13.2"
   }
