@@ -1,6 +1,6 @@
 {
   "name": "cocytus-cli",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "",
   "main": "bin/cocytus",
   "bin": {
@@ -21,10 +21,11 @@
   },
   "homepage": "https://github.com/jikkai/cocytus#readme",
   "dependencies": {
-    "chrome-headless-render-pdf": "^1.8.0",
+    "chrome-headless-render-pdf": "^1.8.2",
     "commander": "^2.19.0",
-    "consola": "^1.4.4",
-    "fs-extra": "^7.0.0",
+    "consola": "^2.4.1",
+    "fs-extra": "^7.0.1",
+    "inquirer": "^6.2.2",
     "serve-static": "^1.13.2"
   }
 }

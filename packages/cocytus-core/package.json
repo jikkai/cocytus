@@ -1,12 +1,16 @@
 {
   "name": "cocytus-core",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "",
-  "main": "dist/cotyus.js",
+  "main": "dist/default/cotyus.js",
   "scripts": {
-    "predev": "cpx ../cocytus-cli/themes/default/**/*.yaml ./dist",
-    "dev": "parcel ./example/index.html",
-    "build": "rimraf dist && parcel build ./src/index.js -o cocytus.js --no-source-maps"
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run build:default && npm run build:material",
+    "mvyaml": "cpx ../cocytus-cli/template/**/*.yaml ./dist",
+    "dev:default": "npm run mvyaml && parcel ./example/default.html",
+    "build:default": "parcel build ./src/index.js -d dist/default -o cocytus.js --no-source-maps",
+    "dev:material": "npm run mvyaml && parcel ./example/material.html",
+    "build:material": "parcel build ./src/index.js -d dist/material -o cocytus.js --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -23,15 +27,15 @@
   "homepage": "https://github.com/jikkai/cocytus#readme",
   "dependencies": {
     "alius": "0.0.1",
-    "feather-icons": "^4.9.0",
-    "js-yaml": "^3.12.0",
-    "marked": "^0.5.1"
+    "feather-icons": "^4.17.0",
+    "js-yaml": "^3.12.1",
+    "marked": "^0.6.1"
   },
   "devDependencies": {
     "cpx": "^1.5.0",
-    "parcel-bundler": "^1.10.3",
-    "parcel-plugin-svelte": "^1.2.3",
-    "rimraf": "^2.6.2",
-    "svelte": "^2.15.1"
+    "parcel-bundler": "^1.11.0",
+    "parcel-plugin-svelte": "^2.0.0",
+    "rimraf": "^2.6.3",
+    "svelte": "^2.16.1"
   }
 }
