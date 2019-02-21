@@ -5,12 +5,10 @@
   "main": "dist/default/cotyus.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && npm run build:default && npm run build:material",
+    "build": "npm run clean && npm run build:default",
     "mvyaml": "cpx ../cocytus-cli/template/**/*.yaml ./dist",
     "dev:default": "npm run mvyaml && parcel ./example/default.html",
-    "build:default": "parcel build ./src/index.js -d dist/default -o cocytus.js --no-source-maps",
-    "dev:material": "npm run mvyaml && parcel ./example/material.html",
-    "build:material": "parcel build ./src/index.js -d dist/material -o cocytus.js --no-source-maps"
+    "build:default": "parcel build ./src/default/index.js -d dist/default -o cocytus.js --no-source-maps"
   },
   "repository": {
     "type": "git",
