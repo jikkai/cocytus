@@ -8,7 +8,9 @@
     "build": "npm run clean && npm run build:default",
     "mvyaml": "cpx ../cocytus-cli/template/**/*.yaml ./dist",
     "dev:default": "npm run mvyaml && parcel ./example/default.html",
-    "build:default": "parcel build ./src/default/index.js -d dist/default -o cocytus.js --no-source-maps"
+    "build:default": "parcel build ./src/default/index.js -d dist/default -o cocytus.js --no-source-maps",
+    "dev:voiz": "npm run mvyaml && parcel ./example/voiz.html",
+    "build:voiz": "parcel build ./src/voiz/index.js -d dist/voiz -o cocytus.js --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -25,9 +27,10 @@
   "homepage": "https://github.com/jikkai/cocytus#readme",
   "dependencies": {
     "alius": "0.0.1",
-    "feather-icons": "^4.17.0",
-    "js-yaml": "^3.12.1",
-    "marked": "^0.6.1"
+    "feather-icons": "^4.19.0",
+    "js-yaml": "^3.12.2",
+    "marked": "^0.6.1",
+    "modern-normalize": "^0.5.0"
   },
   "devDependencies": {
     "cpx": "^1.5.0",

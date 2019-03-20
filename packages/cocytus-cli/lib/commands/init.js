@@ -16,7 +16,8 @@ module.exports = async target => {
     type: 'list',
     message: 'Please Select a theme:',
     choices: [
-      { name: 'Default', value: 'default' }
+      { name: 'Default', value: 'default' },
+      { name: 'Voiz', value: 'voiz' }
     ]
   }])
 

@@ -23,7 +23,7 @@
   "dependencies": {
     "chrome-headless-render-pdf": "^1.8.2",
     "commander": "^2.19.0",
-    "consola": "^2.4.1",
+    "consola": "^2.5.7",
     "fs-extra": "^7.0.1",
     "inquirer": "^6.2.2",
     "serve-static": "^1.13.2"
