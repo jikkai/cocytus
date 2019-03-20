@@ -1,6 +1,6 @@
-<!-- <svelte:head>
+<svelte:head>
 	<title>Resume • {meta.name}</title>
-</svelte:head> -->
+</svelte:head>
 
 <header class="c-header">
   <section class="c-header__left">

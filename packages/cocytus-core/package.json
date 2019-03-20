@@ -5,7 +5,7 @@
   "main": "dist/default/cotyus.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && npm run build:default",
+    "build": "npm run clean && npm run build:default && npm run build:voiz",
     "mvyaml": "cpx ../cocytus-cli/template/**/*.yaml ./dist",
     "dev:default": "npm run mvyaml && parcel ./example/default.html",
     "build:default": "parcel build ./src/default/index.js -d dist/default -o cocytus.js --no-source-maps",
