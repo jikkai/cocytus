@@ -63,6 +63,7 @@
 
 <style>
   :global(html) {
+    width: 884px;
     color: #383c5c;
     background: #f7f8fa;
     line-height: 1.7;
