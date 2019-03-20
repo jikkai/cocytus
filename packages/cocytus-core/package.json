@@ -1,6 +1,6 @@
 {
   "name": "cocytus-core",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "dist/default/cotyus.js",
   "scripts": {
