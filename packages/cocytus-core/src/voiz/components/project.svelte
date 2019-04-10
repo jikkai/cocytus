@@ -29,7 +29,6 @@
 
 <style>
   .c-project {
-    width: 370px;
   }
 
   .c-project__notice {
@@ -42,6 +41,9 @@
     padding: 0;
     font-size: 14px;
     list-style: none;
+  }
+  .c-project__list li {
+    margin-bottom: 16px;
   }
   .c-project__list span {
     display: flex;

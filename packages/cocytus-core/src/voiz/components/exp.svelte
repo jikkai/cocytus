@@ -32,7 +32,6 @@
 
 <style>
   .c-exp {
-    width: 370px;
   }
 
   .c-timeline {

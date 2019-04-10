@@ -7,15 +7,13 @@
     <Intro intro={data.intro} />
   </Card>
 
-  <Content>
-    <Card>
-      <Exp exp={data.exp} />
-    </Card>
+  <Card>
+    <Exp exp={data.exp} />
+  </Card>
 
-    <Card>
-      <Project project={data.project} />
-    </Card>
-  </Content>
+  <Card>
+    <Project project={data.project} />
+  </Card>
   
   <Footer />
 {:else}
@@ -28,7 +26,6 @@
   import Card from './components/card'
   import Header from './components/header'
   import Intro from './components/intro'
-  import Content from './components/content'
   import Exp from './components/exp'
   import Project from './components/project'
   import Footer from './components/footer'
@@ -53,7 +50,6 @@
       Card,
       Header,
       Intro,
-      Content,
       Exp,
       Project,
       Footer
